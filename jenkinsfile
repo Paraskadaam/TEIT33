@@ -6,7 +6,6 @@ pipeline {
                 git branch: 'main', credentialsId: 'a04333b1-ba47-4001-a51d-b7d10229f2d6', url: 'https://github.com/Paraskadaam/TEIT33.git'
             }
         }
-    stages {
         stage('compile') {
             steps {
                 bat 'javac Hello World.java'
