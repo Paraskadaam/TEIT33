@@ -8,12 +8,12 @@ pipeline {
         }
         stage('compile') {
             steps {
-                bat 'javac Hello World.java'
+                bat 'javac HelloWorld.java'
             }
         }
          stage('run') {
             steps {
-                bat 'java Hello World'
+                bat 'java HelloWorld'
             }
         }
     }
